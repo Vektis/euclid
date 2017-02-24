@@ -1,4 +1,5 @@
 package com.company;
+import java.lang.reflect.Array;
 import java.util.*;
 public class Main {
 
@@ -11,10 +12,11 @@ public class Main {
         System.out.println("Enter 2nd number: ");
         int two = input.nextInt();
         System.out.println("Recursive(1) or iterative(2): ");
-        if(input.next().equals("1")){
+        String wew = input.next();
+        if(wew.equals("1")){
             System.out.println(rec(one,two));
         }
-        else if(input.next().equals("2")){
+        else if(wew.equals("2")){
             System.out.println(iter(one,two));
         }
     }
@@ -31,18 +33,24 @@ public class Main {
 
     }
     public static int iter(int one,int two) {
-        int oneR = one % two;
-        int oneD = one / two;
-        int temp = 0;
-        int ret;
-        while (true) {
-            ret = oneR;
-            oneR = oneR % two;
-            oneD = oneD / two;
-            if(oneR == 0){
-                return ret;
+        /*
+        System.out.println("gay?");
+        ArrayList lad = new ArrayList();
+       int r = one%two;
+        int d = one/two;
+        int tow;
+        while(true){
+            tow = two
+            if(r==0){
+                return 4;
+            }
+            else{
+                r = two%r;
+                lad.add(r);
             }
         }
+        */
+        return rec(one,two);
     }
 
 
