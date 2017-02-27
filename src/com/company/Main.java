@@ -33,24 +33,13 @@ public class Main {
 
     }
     public static int iter(int one,int two) {
-        /*
-        System.out.println("gay?");
-        ArrayList lad = new ArrayList();
-       int r = one%two;
-        int d = one/two;
-        int tow;
-        while(true){
-            tow = two
-            if(r==0){
-                return 4;
-            }
-            else{
-                r = two%r;
-                lad.add(r);
-            }
+     int temp = 0;
+        while(two != 0){
+            temp = two;
+            two = one%two;
+            one = temp;
         }
-        */
-        return rec(one,two);
+    return one;
     }
 
 
